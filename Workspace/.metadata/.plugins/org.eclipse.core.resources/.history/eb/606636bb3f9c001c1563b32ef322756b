@@ -1,0 +1,16 @@
+package dao;
+
+import bean.Employee;
+
+public class EmployeeDao {
+
+	
+	public int storeEmployeeRecord(Employee emp) {
+		try {
+		Class.forName("com.mysql.cj.jdbc.Driver");			// MySQL 
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/my_db123", "root", "root@123");	
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

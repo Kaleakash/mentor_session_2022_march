@@ -1,0 +1,15 @@
+package dao;
+
+import bean.Employee;
+
+public class EmployeeDao {
+
+	
+	public int storeEmployeeRecord(Employee emp) {
+		try {
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

@@ -1,0 +1,22 @@
+package service;
+
+import bean.Employee;
+import dao.EmployeeDao;
+
+// business logic. 
+public class EmployeeService {
+
+	
+	public String storeEmployee(Employee emp) {
+		if(emp.getSalary()<12000) {
+			return "Salary must be > 12000";
+		}else {
+			EmployeeDao ed = new EmployeeDao();
+			if(ed.storeEmployeeRecord(emp)>0) {
+				return "Stored";
+			}else {
+				return "didn't store";
+			}
+		}
+	}
+}
